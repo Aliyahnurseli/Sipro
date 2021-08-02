@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class Login_Admin extends Model
+class Login_Admin extends Authenticatable
 {
     protected $table="admin";
     protected $primaryKey = 'username';

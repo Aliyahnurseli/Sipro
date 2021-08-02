@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Login Konsumen</title>
+    <title>Login </title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="src/assets/vendors/iconfonts/mdi/css/materialdesignicons.css" />
-    <link rel="stylesheet" href="src/assets/vendors/css/vendor.addons.css" />
+    <link rel="stylesheet" href="../src/assets/vendors/iconfonts/mdi/css/materialdesignicons.css" />
+    <link rel="stylesheet" href="../src/assets/vendors/css/vendor.addons.css" />
     <!-- endinject -->
     <!-- vendor css for this page -->
     <!-- End vendor css for this page -->
     <!-- inject:css -->
-    <link rel="stylesheet" href="src/assets/css/shared/style.css" />
+    <link rel="stylesheet" href="../src/assets/css/shared/style.css" />
     <!-- endinject -->
     <!-- Layout style -->
-    <link rel="stylesheet" href="src/assets/css/demo_1/style.css">
+    <link rel="stylesheet" href="../src/assets/css/demo_1/style.css">
     <!-- Layout style -->
-    <link rel="shortcut icon" href="src/assets/images/favicon.ico" />
+    <link rel="shortcut icon" href="../src/assets/images/favicon.ico" />
 </head>
   <body>
     <div class="authentication-theme auth-style_1">
@@ -45,11 +45,11 @@
                     <div>{{Session::get('alert-success')}}</div>
                 </div>
             @endif
-               <form action="{{ url('/loginPost') }}" method="post">
+               <form action="{{ url('/kirimdata') }}" method="post">
                     @csrf
                     <div class="form-group input-rounded">
                       
-                      <input type="email" class="form-control" placeholder="Email" name="email" />
+                      <input type="username" class="form-control" placeholder="Username" name="username" />
                     </div>
                     <div class="form-group input-rounded">
                       <input type="password" class="form-control" placeholder="Password" name="password" />

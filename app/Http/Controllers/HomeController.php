@@ -19,9 +19,13 @@ class HomeController extends Controller
     {
         return view ('user.hubungi_kami');
     }
-    public function  loginkonsumen()
+    public function  login()
     {
-        return view ('user.loginkonsumen');
+        return view ('user.login');
+    }
+    public function  daftar()
+    {
+        return view ('user.daftar');
     }
     public function  syaratdanketentuan()
     {

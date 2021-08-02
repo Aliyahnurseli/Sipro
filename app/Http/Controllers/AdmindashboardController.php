@@ -9,6 +9,7 @@ use App\Models\Konsumen;
 use App\Models\Pemesanan;
 use App\Models\Property;
 use App\Models\Transaksi;
+use App\Models\Bank;
 
 class AdmindashboardController extends Controller
 {
@@ -20,8 +21,9 @@ class AdmindashboardController extends Controller
         $pemesanan = Pemesanan::count();
         $property = Property::count();
         $transaksi = Transaksi::count();
+        $bank = Bank::count();
 
-        return view ('admin.dashboard', compact('developer','fasilitas','konsumen','pemesanan','property','transaksi'))->with('i');
+        return view ('admin.dashboard', compact('developer','fasilitas','konsumen','pemesanan','property','transaksi','bank'))->with('i');
     }
 
     /**
