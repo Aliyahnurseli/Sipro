@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Konsumen;
 
+
 class AdminkonsumenController extends Controller
 {
     public function index()
@@ -17,6 +18,8 @@ class AdminkonsumenController extends Controller
     {
         $data = array(
             'nama'=>$request->nama,
+            'username'=>$request->username,
+            'password'=>$request->password,
             'alamat'=>$request->alamat,
             'no_telepon'=>$request->no_telepon,
             

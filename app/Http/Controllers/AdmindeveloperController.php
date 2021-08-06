@@ -9,14 +9,16 @@ class AdmindeveloperController extends Controller
 {
     public function index()
     {
-        $developers = Developer::all();
-        return view('admin/developer',compact('developers'))->with('i');
+        $developer = Developer::all();
+        return view('admin/developer',compact('developer'))->with('i');
     }
 
     public function store(Request $request)
     {
         $data = array(
             'nama'=>$request->nama,
+            'username'=>$request->username,
+            'password'=>$request->password,
             'alamat'=>$request->alamat,
             'no_telepon'=>$request->no_telepon,
             'status'=>$request->status,
@@ -32,6 +34,7 @@ class AdmindeveloperController extends Controller
         {
             $data = array(
                 'status'=>$request->status,
+                'keterangan'=>$request->keterangan,
             );
         Developer::whereid_developer($id)->update($data);
         return redirect('admin\developer');

@@ -1,5 +1,5 @@
 @extends('admin.template.layout')
-@section('tittle','dashboard-admin')
+@section('tittle','dashboard')
 @section('content')
 
                                         <div class="row">

@@ -106,17 +106,17 @@ return [
 
         'admin' => [
             'driver' => 'eloquent',
-            'model' => App\Models\Login_admin::class,
+            'model' => App\Models\Login_Admin::class,
         ],
 
         'developer' => [
             'driver' => 'eloquent',
-            'model' => App\Models\Login_developer::class,
+            'model' => App\Models\Login_Developer::class,
         ],
 
         'konsumen' => [
             'driver' => 'eloquent',
-            'model' => App\Models\Login_konsumen::class,
+            'model' => App\Models\Login_Konsumen::class,
         ],
 
         // 'users' => [

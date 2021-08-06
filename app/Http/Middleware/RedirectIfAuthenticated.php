@@ -19,17 +19,17 @@ class RedirectIfAuthenticated
      */
     public function handle(Request $request, Closure $next, ...$guards)
     {
-        if (Auth::guard('admin')->check()) {
-            return redirect('/admin/dashboard');
-        }else if (Auth::guard('developer')->check()) {
-            return redirect('/developer/dashboard');
-        }else if (Auth::guard('konsumen')->check()) {
-            return redirect('/konsumen/homeuser');
-        }
-        else{
-            redirect('/masuk');
-        }
+         if (Auth::guard('admin')->check()) {
+          return redirect('/admin/dashboard');
+         }else if (Auth::guard('developer')->check()) {
+             return redirect('/developer/dashboard');
+         }else if (Auth::guard('konsumen')->check()) {
+             return redirect('/konsumen/homeuser');
+         }
+         else{
+           redirect('/masuk');
+         }
 
-        return $next($request);
+         return $next($request);
     }
 }

@@ -13,16 +13,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view ('user.home');
+        return view ('index1');
     }
     public function  hubungi_kami()
     {
         return view ('user.hubungi_kami');
     }
-    public function  login()
-    {
-        return view ('user.login');
-    }
+   
     public function  daftar()
     {
         return view ('user.daftar');
@@ -39,10 +36,8 @@ class HomeController extends Controller
     {
         return view ('user.maintenance');
     }
-    public function  logindeveloper()
-    {
-        return view ('user.logindeveloper');
-    }
+    
+    
 
     
 

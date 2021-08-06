@@ -31,17 +31,17 @@
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
-            <form action="/kirimdata" method="Post">
+            <form action="/masuk" method="Post">
             {{csrf_field()}}
               <h1>MASUK</h1>
               <div>
-                <input type="text" class="form-control" name="username" placeholder="Nama" required="" />
+                <input type="text" class="form-control" name="username" placeholder="username" required="" />
               </div>
               <div>
                 <input type="password" class="form-control" name="password" placeholder="Password" required="" />
               </div>
               <div>
-                <button  type="submit" class="btn btn-successt">MASUK</button>
+                <button  class="btn btn-successt">MASUK</button>
                 <p>Jika Anda tidak memiliki akun silahkan <a href="{{URL('/daftar')}}">daftar disini</a></p>
               
               </div>
@@ -54,6 +54,7 @@
 
                 <div>
                   <h1>Property</h1>
+                  <p></p>
                 </div>
               </div>
             </form>
