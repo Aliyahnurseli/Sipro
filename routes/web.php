@@ -12,6 +12,7 @@ use App\Http\Controllers\AdmintransaksiController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\homeController;
 use App\Http\Controllers\DaftarController;
+use App\Http\Controllers\KonsumenController;
 
 
 /*
